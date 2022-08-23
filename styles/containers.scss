@@ -1,0 +1,9 @@
+@import "./functions.scss";
+
+$widths: (
+	"large": remSize(1240),
+);
+
+@function containerWidth($width) {
+	@return map-get($widths, $width);
+}

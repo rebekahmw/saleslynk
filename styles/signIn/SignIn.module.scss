@@ -1,0 +1,41 @@
+@import "../functions.scss";
+@import "../containers.scss";
+@import "../colors.scss";
+@import "../defaults.scss";
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.formContainer {
+	width: "300px";
+	margin-bottom: spacing("xxxlarge");
+	@include breakBetween("tablet", "mobile") {
+		margin-bottom: spacing("xxlarge");
+	}
+	@include breakMax("mobile") {
+		margin-bottom: spacing("xlarge");
+	}
+	@include breakMin("mobile") {
+		padding-right: spacing("xlarge");
+	}
+}
+
+.title {
+	font-size: default("font-size-medium");
+	font-family: fontFamily("poppins");
+	margin-bottom: spacing("medium");
+	p {
+		font-weight: 600;
+		margin: 0;
+		span {
+			color: colour("orange");
+		}
+	}
+	@include breakMax("mobile") {
+		font-size: remSize(16);
+		line-height: remSize(26);
+	}
+}

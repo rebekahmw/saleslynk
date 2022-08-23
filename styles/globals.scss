@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+@import "./colors.scss";
+@import "./defaults.scss";
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: fontFamily("space-mono");
+}
+
+body {
+	background-color: colour("white");
+	color: colour("black");
+	font-size: default("font-size");
+	font-weight: 400;
+	line-height: default("line-height");
+	min-height: 100vh;
+	@include breakMax("tablet") {
+		font-size: default("font-size-small");
+		line-height: default("line-height-mobile");
+	}
+	@include scrollbars(10px, colour("green"), colour("black"));
+	::selection {
+		background: colour("green");
+		color: colour("black");
+	}
+	::-moz-selection {
+		background: colour("green");
+		color: colour("black");
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all ease-in 0.2s;
+	&:hover, &:active, &:focus {
+		border-radius: 0;
+		color: colour("green");
+		outline: none;
+	}
+}
+
+p {
+	margin: 0 0 spacing("medium");
+	@include breakMax("tablet") {
+		margin: 0 0 spacing("large");
+	}
+}
+
+.keen-slider:not([data-keen-slider-disabled]).keen-slider-overflow {
+	overflow: visible;
+}

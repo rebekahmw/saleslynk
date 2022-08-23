@@ -1,0 +1,11 @@
+@function relSize($pixels, $context) {
+	@return $pixels / $context * 1em;
+}
+
+@function remSize($pixels) {
+	@return $pixels / 16 * 1rem;
+}
+
+@function ratio($val) {
+	@return (($val * 1.61803399) / $val) * 1em;
+}

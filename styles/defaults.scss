@@ -1,0 +1,101 @@
+@import "./functions.scss";
+@import "./containers.scss";
+@import "./colors.scss";
+
+$defaults: (
+	"font-size-large": remSize(18),
+	"font-size": remSize(14),
+	"font-size-small": remSize(12),
+	"line-height-mobile": 1.833333333333333em,
+	"line-height": 1.714285714285714em,
+	"line-height-small": 1.5em,
+	"line-height-xsmall": 1.363636363636364em,
+);
+
+$breakpoints: (
+	"tablet": 1024px,
+	"mobile": 480px,
+);
+
+$headingsFontSizes: (
+	"h1": remSize(55),
+	"h2": remSize(40),
+	"h3": remSize(26),
+	"h4": remSize(18),
+	"h5": remSize(14),
+);
+
+$spacings: (
+	"xxxxlarge": remSize(300),
+	"xxxlarge": remSize(150),
+	"xxlarge": remSize(100),
+	"xlarge": remSize(75),
+	"xslarge": remSize(50),
+	"large": remSize(40),
+	"slarge": remSize(30),
+	"medium": remSize(20),
+	"small": remSize(15),
+	"xsmall": remSize(10),
+	"xxsmall": remSize(5),
+);
+
+$fontFamilies: (
+	"poppins": #{"Poppins",
+	sans-serif},
+	"space-mono": #{"Space Mono",
+	monospace},
+);
+
+@function default($default) {
+	@return map-get($defaults, $default);
+}
+
+@function heading($heading) {
+	@return map-get($headingsFontSizes, $heading);
+}
+
+@function spacing($spacing) {
+	@return map-get($spacings, $spacing);
+}
+
+@function fontFamily($fontFamily) {
+	@return map-get($fontFamilies, $fontFamily);
+}
+
+@mixin breakMax($min) {
+	@media (max-width: map-get($breakpoints, $min)) {
+		@content;
+	}
+}
+
+@mixin breakMin($min) {
+	@media (min-width: #{map-get($breakpoints, $min) + 1px}) {
+		@content;
+	}
+}
+
+@mixin breakBetween($max, $min) {
+	@media (max-width: map-get($breakpoints, $max)) and (min-width: #{map-get($breakpoints, $min) + 1px}) {
+		@content;
+	}
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, colour("white"),  50%)) {
+	&::-webkit-scrollbar {
+	  width:  $size;
+	  height: $size;
+	}
+  
+	&::-webkit-scrollbar-thumb {
+	  background: $foreground-color;
+	}
+  
+	&::-webkit-scrollbar-track {
+	  background: $background-color;
+	}
+  
+	& {
+	  scrollbar-face-color: $foreground-color;
+	  scrollbar-track-color: $background-color;
+	}
+  }
