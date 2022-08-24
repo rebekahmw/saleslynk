@@ -1,0 +1,14 @@
+@import "../functions.scss";
+@import "../containers.scss";
+@import "../colors.scss";
+@import "../defaults.scss";
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    @include breakMax("tablet") {
+        flex-direction: column;
+    }
+}

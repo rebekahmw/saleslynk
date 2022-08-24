@@ -69,45 +69,47 @@ const SignIn = () => {
 	};
 
 	return (
-		<div>
-			<div>
-				<div>
-					<div>
-						<form className={style([form.form])}>
-							<TextInput
-								name="email"
-								label=""
-								value={value.email}
-								placeholder="Email Address"
-								onChange={handleChange}
-								error={errors.emailError}
-							/>
-							<TextInput
-								name="password"
-								value={value.email}
-								placeholder="Password"
-								onChange={handleChange}
-								error={errors.emailError}
-							/>
+			<div className={style([form.container])}>
+				<svg 
+					xmlns="http://www.w3.org/2000/svg" 
+					width="303.483px"
+					height="56.311"
+					viewBox="0 0 303.483 56.311"
+				/>
+				<h2>Please sign in to your account</h2>
+				<form className={style([form.form])}>
+					<TextInput
+						name="email"
+						type="email"
+						value={value.email}
+						placeholder="Email Address"
+						onChange={handleChange}
+						error={errors.emailError}
+					/>
+					<TextInput
+						name="password"
+						type="password"
+						value={value.password}
+						placeholder="Password"
+						onChange={handleChange}
+						error={errors.emailError}
+					/>
 
-							{error ? <FormError error={error} /> : null}
-							{success ? <FormSuccess success={success} /> : null}
-							<div className={style([form.submit])}>
-								<a
-									className={style([
-										button.button,
-										button.standard,
-										loading ? button.loading : "",
-									])}
-									onClick={handleSubmit}>
-									Speak to Us
-								</a>
-							</div>
-						</form>
+					{error ? <FormError error={error} /> : null}
+					{success ? <FormSuccess success={success} /> : null}
+					<div className={style([button.submit])}>
+						<a
+							className={style([
+								button.button,
+								button.standard,
+								loading ? button.loading : "",
+							])}
+							onClick={handleSubmit}>
+							Speak to Us
+						</a>
 					</div>
-				</div>
+				</form>
 			</div>
-		</div>
 	);
 };
 

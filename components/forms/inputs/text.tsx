@@ -6,6 +6,7 @@ export type Props = {
 	name: string;
 	value: string;
 	label?: string;
+	type: string;
 	placeholder?: string;
 	onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 	onBlur?: (e: ChangeEvent<HTMLInputElement>) => void;
@@ -13,32 +14,24 @@ export type Props = {
 	readonly?: boolean;
 };
 
-const TextInput: React.FC<Props> = ({
-	name,
-	value,
-	label,
-	placeholder,
-	onChange,
-	onBlur,
-	error,
-	readonly,
-}) => {
+const TextInput: React.FC<Props> = ({ ...props }) => {
 	return (
 		<div
-			className={style([form.formItem, error ? form.formItemError : ""])}>
-			<label className={style([form.label])}>{label}</label>
+			className={style([form.formItem, props.error ? form.formItemError : ""])}>
+			<label className={style([form.label])}>{props.label}</label>
 			<input
-				type="text"
-				name={name}
-				value={value}
-				onChange={onChange}
-				onBlur={onBlur || undefined}
-				placeholder={placeholder}
-				readOnly={readonly ? true : false}
+				className={style([form.formInput])}
+				type={props.type}
+				name={props.name}
+				value={props.value}
+				onChange={props.onChange}
+				onBlur={props.onBlur || undefined}
+				placeholder={props.placeholder}
+				readOnly={props.readonly ? true : false}
 			/>
 			<div className={style([form.formItemBorder])} />
-			{error ? (
-				<span className={style([form.error])}>{error}</span>
+			{props.error ? (
+				<span className={style([form.error])}>{props.error}</span>
 			) : null}
 		</div>
 	);

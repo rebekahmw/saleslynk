@@ -1,0 +1,14 @@
+@import "../functions.scss";
+@import "../containers.scss";
+@import "../colors.scss";
+@import "../defaults.scss";
+
+.container {
+    width: 60%;
+    height: 100%;
+
+    // @include breakMax("tablet") {
+    //     width: 100%;
+    //     height: 30%;
+    // }
+}

@@ -3,148 +3,39 @@
 @import "../colors.scss";
 @import "../defaults.scss";
 
-.form {
-	margin: 0;
-	padding: 0;
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgb(187, 176, 176);
+	-webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+	width: 40%;
+	padding: 30px;
+	height: 100%;
 }
 
 .formItem {
-	margin-bottom: spacing("large");
-	input,
-	textarea {
-		background-color: transparent;
-		border: 0;
-		border-radius: 0;
-		box-shadow: none;
-		display: block;
-		font-family: fontFamily("poppins");
-		font-size: remSize(26);
-		font-weight: 500;
-		line-height: remSize(39);
-		padding: spacing("small") 0;
-		outline: none;
-		width: 100%;
-		&::placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-		&::-webkit-input-placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-		&::-ms-placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-		&::-moz-placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-		&:active, &:focus {
-			+ .formItemBorder {
-				&::after {
-					transform: scaleX(1);
-				}
-			}
-		}
-		@include breakMax("tablet") {
-			font-size: remSize(18);
-			line-height: remSize(27);
-		}
-	}
-	textarea {
-		min-height: remSize(100);
-		resize: vertical;
-		&::placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-		&::-webkit-input-placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-		&::-ms-placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-		&::-moz-placeholder {
-			color: colour("black");
-			font-size: remSize(26);
-			font-weight: 500;
-			opacity: 1;
-			@include breakMax("tablet") {
-				font-size: remSize(18);
-			}
-		}
-	}
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 5px;
+	border: 1px solid #000;
+	padding-left: 20px;
+	transition: 1s;
+	line-height: 0;
+	margin: 25px 0;
 }
 
-.formItemBorder {
-	background-color: colour("darkestGrey");
-	height: 2px;
-	position: relative;
-	&::after {
-		background-color: colour("green");
-		content: "";
-		height: 2px;
-		left: 0;
-		position: absolute;
-		top: 0;
-		transform: scaleX(0);
-		transition: transform ease-in .5s;
-		transform-origin: left;
-		width: 100%;
-		will-change: transform;
-	}
-}
-
-.formItemError {
-	input, textarea {
-		+ .formItemBorder {
-			&::after {
-				background-color: colour("red");
-				transform: scaleX(1);
-			}
-		}
-	}
-	label {
-		color: colour("red");
-	}
+.formInput {
+	width: 100%;
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	font-size: small;
+	font-weight: 200;
 }
 
 .label {
@@ -152,16 +43,6 @@
 	display: block;
 	font-size: remSize(14);
 	margin: 0;
-}
-
-.submit {
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-	&.application {
-		align-items: center;
-		justify-content: space-between;
-	}
 }
 
 .error {
@@ -174,73 +55,8 @@
 }
 
 .success {
-	color: colour("green");
+	color: colour("orange");
 	display: block;
 	font-size: remSize(14);
 	font-weight: 500;
-}
-
-.fileWrapper {
-	margin-top: spacing("small");
-	position: relative;
-	input[type="file"] {
-		cursor: pointer;
-		opacity: 0;
-		&:hover, &:active, &:focus {
-			+ .fileTrigger {
-				&::before {
-					background-color: colour("black");
-					color: colour("green");
-				}
-			}
-		}
-	}
-}
-
-.fileTrigger {
-	align-items: center;
-	border-bottom: 2px solid colour("darkestGrey");
-    bottom: 0;
-    cursor: pointer;
-    display: flex;
-	font-family: fontFamily("poppins");
-	font-size: remSize(26);
-	font-weight: 500;
-	line-height: remSize(39);
-    left: 0;
-    margin: 0;
-    max-width: 100%;
-    overflow: hidden;
-    padding: spacing("small") spacing("small") spacing("small") spacing("xxxlarge");
-	pointer-events: none;
-    position: absolute;
-    right: 0;
-    text-overflow: ellipsis;
-    transition: all ease-in 0.2s;
-    top: 0;
-    white-space: nowrap;
-	width: 100%;
-	@include breakMax("tablet") {
-		font-size: remSize(18);
-		line-height: remSize(27);
-	}
-	&::before {
-		align-items: center;
-		border: 1px solid colour("black");
-		border-bottom: 0;
-		bottom: 0;
-		color: colour("black");
-		content: "Select File";
-		display: flex;
-		font-family: "Space Mono", monospace;
-		font-size: remSize(14);
-		font-weight: 400;
-		line-height: default("line-height");
-		justify-content: center;
-		left: 0;
-		padding: remSize(13) spacing("medium");
-		position: absolute;
-		transition: all ease-in 0.2s;
-		// top: 0;
-	}
 }

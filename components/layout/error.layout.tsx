@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import ErrorWrapper from '../error/wrapper.error';
-import GlobalHeader from '../header/global.header';
 
 type Props = {
 	children: React.ReactChild
@@ -35,7 +34,6 @@ const ErrorLayout: React.FC<Props> = ({ children }) => {
 
 			</Head>
 			<div>
-				<GlobalHeader />
 				<ErrorWrapper>
 					{children}
 				</ErrorWrapper>
