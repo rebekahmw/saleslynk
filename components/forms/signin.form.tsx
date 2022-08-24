@@ -1,11 +1,15 @@
 import { ChangeEvent, MouseEvent, useState } from "react";
 import TextInput from "./inputs/text";
 import form from "../../styles/forms/Form.module.scss";
+import home from "../../styles/home/Home.module.scss";
 import button from "../../styles/buttons/Button.module.scss";
 import style from "../../utils/styles";
 import { SignInErrorType, SignInValidate } from "../../functions/validate";
 import FormError from "./error.form";
 import FormSuccess from "./success.form";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 export type SignInType = {
 	email: string;
@@ -69,32 +73,37 @@ const SignIn = () => {
 	};
 
 	return (
-			<div className={style([form.container])}>
+			<div className={style([home.Itemcontainer])}>
 				<svg 
 					xmlns="http://www.w3.org/2000/svg" 
 					width="303.483px"
 					height="56.311"
 					viewBox="0 0 303.483 56.311"
 				/>
-				<h2>Please sign in to your account</h2>
+				<h3 style={{ textAlign: "center" }}>Please sign in to your account</h3>
 				<form className={style([form.form])}>
-					<TextInput
-						name="email"
-						type="email"
-						value={value.email}
-						placeholder="Email Address"
-						onChange={handleChange}
-						error={errors.emailError}
-					/>
-					<TextInput
-						name="password"
-						type="password"
-						value={value.password}
-						placeholder="Password"
-						onChange={handleChange}
-						error={errors.emailError}
-					/>
-
+					<div className={style([form.inputField])}>
+						<FontAwesomeIcon icon={faUser} />					
+						<TextInput
+							name="email"
+							type="email"
+							value={value.email}
+							placeholder="Email Address"
+							onChange={handleChange}
+							error={errors.emailError}
+						/>
+					</div>
+					<div className={style([form.inputField])}>
+						<FontAwesomeIcon icon={faLock} />
+						<TextInput
+							name="password"
+							type="password"
+							value={value.password}
+							placeholder="Password"
+							onChange={handleChange}
+							error={errors.emailError}
+						/>
+					</div>
 					{error ? <FormError error={error} /> : null}
 					{success ? <FormSuccess success={success} /> : null}
 					<div className={style([button.submit])}>
@@ -105,7 +114,7 @@ const SignIn = () => {
 								loading ? button.loading : "",
 							])}
 							onClick={handleSubmit}>
-							Speak to Us
+							Sign In 
 						</a>
 					</div>
 				</form>

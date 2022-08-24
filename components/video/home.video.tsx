@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import style from "../../utils/styles";
-import video from "../../styles/video/Video.module.scss";
+import home from "../../styles/home/Home.module.scss";
 
 type Props = {
     src: string
@@ -9,7 +9,7 @@ type Props = {
 
 const Video: NextPage<Props> = ({ ...props }) => {
 	return (
-        <div className={style([video.container])}>
+        <div className={style([home.container])}>
             <Image
                 src={props.src}
                 width="400px"

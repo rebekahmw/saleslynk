@@ -16,6 +16,13 @@
 	height: 100%;
 }
 
+.inputField {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 .formItem {
 	display: flex;
 	flex-direction: row;

@@ -18,7 +18,6 @@ const TextInput: React.FC<Props> = ({ ...props }) => {
 	return (
 		<div
 			className={style([form.formItem, props.error ? form.formItemError : ""])}>
-			<label className={style([form.label])}>{props.label}</label>
 			<input
 				className={style([form.formInput])}
 				type={props.type}
