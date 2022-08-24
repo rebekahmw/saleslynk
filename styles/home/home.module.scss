@@ -7,6 +7,9 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    background-color: rgb(200, 67, 67);
+    -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
     // @include breakMax("tablet") {
     //     flex-direction: column;
     //     display: flex;

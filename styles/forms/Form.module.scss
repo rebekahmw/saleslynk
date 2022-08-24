@@ -4,16 +4,14 @@
 @import "../defaults.scss";
 
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background-color: rgb(187, 176, 176);
-	-webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
-	width: 40%;
-	padding: 30px;
-	height: 100%;
+	width: 500px;
+}
+
+.orangeBlock {
+	margin: auto;
+	width: 90px;
+	height: 4px;
+	background-color: colour("orange");
 }
 
 .inputField {
@@ -21,6 +19,16 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	height: 40px;
+	border-radius: 5px;
+	border: solid;
+	border-width: thin;
+	margin: 0px 100px 20px 100px;
+	padding-left: 20px;
+}
+
+.top {
+	margin-top: 30px;
 }
 
 .formItem {
@@ -28,12 +36,11 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	border-radius: 5px;
-	border: 1px solid #000;
 	padding-left: 20px;
 	transition: 1s;
 	line-height: 0;
 	margin: 25px 0;
+	width: 270px;
 }
 
 .formInput {

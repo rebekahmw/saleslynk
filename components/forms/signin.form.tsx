@@ -74,16 +74,11 @@ const SignIn = () => {
 
 	return (
 			<div className={style([home.Itemcontainer])}>
-				<svg 
-					xmlns="http://www.w3.org/2000/svg" 
-					width="303.483px"
-					height="56.311"
-					viewBox="0 0 303.483 56.311"
-				/>
-				<h3 style={{ textAlign: "center" }}>Please sign in to your account</h3>
-				<form className={style([form.form])}>
-					<div className={style([form.inputField])}>
-						<FontAwesomeIcon icon={faUser} />					
+				<h2 style={{ textAlign: "center" }}>Please sign in to your account</h2>
+				<div className={style([form.orangeBlock])}></div>
+				<form className={style([form.container])}>
+					<div className={style([form.inputField, form.top])}>
+						<FontAwesomeIcon icon={faUser} />		
 						<TextInput
 							name="email"
 							type="email"
