@@ -4,8 +4,12 @@
 @import "../defaults.scss";
 
 .container {
-    width: 60%;
-    height: 100%;
+    position: absolute;
+    z-index: 0;
+    width: 70vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
 
     // @include breakMax("tablet") {
     //     width: 100%;

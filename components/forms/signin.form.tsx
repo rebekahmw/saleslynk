@@ -1,7 +1,6 @@
 import { ChangeEvent, MouseEvent, useState } from "react";
 import TextInput from "./inputs/text";
 import form from "../../styles/forms/Form.module.scss";
-import home from "../../styles/home/Home.module.scss";
 import button from "../../styles/buttons/Button.module.scss";
 import style from "../../utils/styles";
 import { SignInErrorType, SignInValidate } from "../../functions/validate";
@@ -73,10 +72,11 @@ const SignIn = () => {
 	};
 
 	return (
-			<div className={style([home.Itemcontainer])}>
+			<div className={style([form.container])}>
+			<div className={style([form.form])}>
 				<h2 style={{ textAlign: "center" }}>Please sign in to your account</h2>
 				<div className={style([form.orangeBlock])}></div>
-				<form className={style([form.container])}>
+				<form>
 					<div className={style([form.inputField, form.top])}>
 						<FontAwesomeIcon icon={faUser} />		
 						<TextInput
@@ -112,7 +112,7 @@ const SignIn = () => {
 							Sign In 
 						</a>
 					</div>
-				</form>
+				</form></div>
 			</div>
 	);
 };
