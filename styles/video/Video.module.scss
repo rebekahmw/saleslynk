@@ -11,8 +11,9 @@
     top: 0;
     right: 0;
 
-    // @include breakMax("tablet") {
-    //     width: 100%;
-    //     height: 30%;
-    // }
+    @include breakMax("smallTablet") {
+        width: 100vw;
+        height: 50vw;
+        position: relative;
+    }
 }

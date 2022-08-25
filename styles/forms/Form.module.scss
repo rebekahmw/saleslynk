@@ -11,6 +11,16 @@
 	height: 100vh;
 	-webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+
+	@include breakMax("smallTablet") {
+		width: 100vw;
+		position: relative;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	@include breakMax("tablet") {
+		
+		height: 60vw;
+	}		
 }
 
 .orangeBlock {
@@ -25,6 +35,14 @@
 	position: absolute;
 	left: 70px;
 	top: 140px;
+
+	@include breakMax("smallTablet") {
+		width: 50vw;
+		position: relative;
+		margin: auto;
+		top: 0;
+		left: 0
+	}
 }
 
 .inputField {
