@@ -1,4 +1,4 @@
-import { ChangeEvent, MouseEvent, useState } from "react";
+import { ChangeEvent, MouseEvent, useEffect, useState } from "react";
 import TextInput from "./inputs/text";
 import form from "../../styles/forms/Form.module.scss";
 import button from "../../styles/buttons/Button.module.scss";
@@ -9,6 +9,7 @@ import FormSuccess from "./success.form";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { useRouter } from 'next/router';
 
 export type SignInType = {
 	email: string;
@@ -25,8 +26,16 @@ const SignIn = () => {
 		passwordError: null,
 	});
 	const [error, setError] = useState<string | null>(null);
-	const [success, setSuccess] = useState<string | null>(null);
-	const [loading, setLoading] = useState<boolean>(false);
+	const [link, setLink] = useState<boolean>(false);
+
+	const router = useRouter();
+
+    useEffect(() => {
+        // redirect to dashboard if user is authenticated
+        if (link === true) {
+            router.push('/dashboard');
+        }
+    }, [link]);
 
 	const handleChange = (
 		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -43,14 +52,11 @@ const SignIn = () => {
 		e.preventDefault();
 
 		const validation = SignInValidate(value);
-
 		// setErrors(validation.errors);
-		setSuccess(null);
-
+		
 		if (validation.valid) {
-			setLoading(true);
 
-			const response = await fetch("/api/contact", {
+			const response = await fetch("/api/signin", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -63,11 +69,12 @@ const SignIn = () => {
 				setError(result.message);
 			} else {
 				const result = await response.json();
-				setSuccess(result.message);
 				setValue({ email: "", password: "" });
 			}
 
-			setLoading(false);
+			if (response.status === 200) {
+				router.push('/dashboard');
+			};
 		}
 	};
 
@@ -99,19 +106,19 @@ const SignIn = () => {
 							error={errors.emailError}
 						/>
 					</div>
-					{error ? <FormError error={error} /> : null}
-					{success ? <FormSuccess success={success} /> : null}
+					
 					<div className={style([button.submit])}>
 						<a
 							className={style([
 								button.button,
 								button.standard,
-								loading ? button.loading : "",
 							])}
-							onClick={handleSubmit}>
+							onClick={handleSubmit}
+						>
 							Sign In 
 						</a>
 					</div>
+					{error ? <FormError error={error} /> : null}
 				</form></div>
 			</div>
 	);

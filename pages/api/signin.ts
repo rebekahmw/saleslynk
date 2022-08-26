@@ -16,16 +16,17 @@ const SignInHandler = (
     const { body }: { body: SignInType } = req;
 
     if (body.email === "test@test.com" && body.password === "test") {
-        return res.status(200).json({
+        res.status(200).json({
             ok: true,
             status: 200,
             message: "Login successful.",
-        })
-    }
+        });
+        // return res.redirect(307, "/dashboard");
+    };
 
     return res.status(401).json({
-        ok: true,
-        status: 200,
+        ok: false,
+        status: 401,
         message: "Login details unknown.",
     });
 
