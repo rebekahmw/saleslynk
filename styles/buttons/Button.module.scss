@@ -15,49 +15,9 @@
 	display: block;
 	padding: 7px;
 	&:hover, &:active, &:focus {
-		color: colour("green");
-		&::before {
-			transform: translateY(0);
-		}
-	}
-	&.loading {
-		padding-right: spacing("large");
-		position: relative;
-		&::after {
-			animation-name: loading;
-			animation-duration: 1s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
-			background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+CiAgPGcgaWQ9IkVsbGlwc2VfMSIgZGF0YS1uYW1lPSJFbGxpcHNlIDEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzExMTQxNyIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iMjM1Ij4KICAgIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ1IiBmaWxsPSJub25lIi8+CiAgPC9nPgo8L3N2Zz4K");
-			background-size: 15px;
-			background-position: contain;
-			background-repeat: no-repeat;
-			content: "";
-			height: 15px;
-			right: 5px;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%) rotate(0);
-			width: 15px;
-		}
-	}
-}
-
-.button--icon {
-	align-self: flex-start;
-	display: flex;
-	&:hover, &:active, &:focus {
-		color: colour("black");
-		text-decoration: underline;
-	}
-}
-
-@keyframes loading {
-	0% {
-		transform: translateY(-50%) rotate(0deg);
-	}
-	100% {
-		transform: translateY(-50%) rotate(360deg);
+		color: colour("orange");
+		background-color: colour("black");
+		border-radius: 5px;
 	}
 }
 
