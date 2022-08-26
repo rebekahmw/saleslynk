@@ -1,4 +1,3 @@
-import { ApplicationType } from "../components/forms/application.form";
 import { SignInType } from "../components/forms/signin.form";
 
 export const IsEmail = (email: string) => {
@@ -15,21 +14,9 @@ export const IsEmail = (email: string) => {
 	}
 };
 
-export type ContactErrorType = {
-	nameError: string | null;
-	emailError: string | null;
-	contactError: string | null;
-};
-
 export type SignInErrorType = {
 	emailError: string | null;
 	passwordError: string | null;
-};
-
-export type ApplicationErrorType = {
-	nameError: string | null;
-	emailError: string | null;
-	cvError: string | null;
 };
 
 export type FormErrorType = { [key: string]: string | null };
@@ -41,12 +28,11 @@ type ErrorType = {
 
 export const SignInValidate = (
 	logInData: SignInType
-): ErrorType & { errors: ContactErrorType } => {
+): ErrorType & { errors: SignInErrorType } => {
 	let valid = true;
-	const errors: ContactErrorType = {
-		nameError: null,
+	const errors: SignInErrorType = {
 		emailError: null,
-		contactError: null,
+		passwordError: null,
 	};
 	if (!logInData.email) {
 		valid = false;
@@ -57,39 +43,9 @@ export const SignInValidate = (
 	}
 	if (!logInData.password) {
 		valid = false;
-		errors.contactError = "Password is required";
+		errors.passwordError = "Password is required";
 	}
 
-	return {
-		valid,
-		errors,
-	};
-};
-
-export const ApplicationValidate = (
-	applicationData: ApplicationType
-): ErrorType & { errors: ApplicationErrorType } => {
-	let valid = true;
-	const errors: ApplicationErrorType = {
-		nameError: null,
-		emailError: null,
-		cvError: null,
-	};
-	if (!applicationData.name) {
-		valid = false;
-		errors.nameError = "Name is required";
-	}
-	if (!applicationData.email) {
-		valid = false;
-		errors.emailError = "Email is required";
-	} else if (!IsEmail(applicationData.email)) {
-		valid = false;
-		errors.emailError = "A valid email is required";
-	}
-	if (!applicationData.cv) {
-		valid = false;
-		errors.cvError = "Your CV is required";
-	}
 	return {
 		valid,
 		errors,
