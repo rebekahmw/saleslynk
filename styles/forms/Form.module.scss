@@ -16,11 +16,7 @@
 		width: 100vw;
 		position: relative;
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-	}
-	@include breakMax("tablet") {
-		
-		height: 60vw;
-	}		
+	}	
 }
 
 .orangeBlock {
