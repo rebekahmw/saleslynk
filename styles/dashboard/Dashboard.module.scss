@@ -1,0 +1,74 @@
+@import "../functions.scss";
+@import "../containers.scss";
+@import "../colors.scss";
+@import "../defaults.scss";
+
+.container {
+    width: 100vw;
+
+    // @include breakMax("tablet") {
+    //     height: 40vh
+    // }
+   
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 80vh;
+
+    @include breakMax("smallTablet") {
+        flex-direction: column
+    }
+}
+
+.sideColumn {
+    width: 25vw;
+    background-color: colour("black");
+    @include breakMax("smallTablet") {
+        width: 80vw;
+        height: 30vh;
+        margin-bottom: 2rem;
+    }
+}
+.left {
+    @include breakMax("tablet") {
+        width: 35vw;
+        height: 40vh;
+    }
+    @include breakMax("smallTablet") {
+        width: 80vw;
+        height: 30vh;
+        margin-bottom: 2rem;
+    }
+}
+.right {
+    @include breakMax("smallTablet") {
+        width: 80vw;
+        height: 30vh;
+        margin-top: 0;
+    }
+    @include breakMax("tablet") {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 2rem;
+    }      
+}
+
+.middleInfo {
+    width: 40vw;
+    border: 2px solid colour("black");
+
+    @include breakMax("tablet") {
+        width: 50vw;
+        height: 40vh;
+    }
+}
+
+.mobile {
+    @include breakMax("smallTablet") {
+        width: 80vw;
+    }
+}
