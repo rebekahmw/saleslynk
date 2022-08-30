@@ -4,7 +4,7 @@
 @import "../defaults.scss";
 
 .container {
-    width: 100vw;
+    // width: 100vw;
 
     // @include breakMax("tablet") {
     //     height: 40vh
@@ -18,9 +18,12 @@
     justify-content: space-between;
     padding: 2rem;
     height: 80vh;
-
+    @include breakMax("tablet") {
+        flex-wrap: wrap;
+    }
     @include breakMax("smallTablet") {
-        flex-direction: column
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 
@@ -30,12 +33,11 @@
     @include breakMax("smallTablet") {
         width: 80vw;
         height: 30vh;
-        margin-bottom: 2rem;
     }
 }
 .left {
     @include breakMax("tablet") {
-        width: 35vw;
+        width: 38vw;
         height: 40vh;
     }
     @include breakMax("smallTablet") {
@@ -46,12 +48,11 @@
 }
 .right {
     @include breakMax("smallTablet") {
-        width: 80vw;
         height: 30vh;
         margin-top: 0;
     }
     @include breakMax("tablet") {
-        width: 80vw;
+        width: 100vw;
         height: 40vw;
         margin-top: 2rem;
     }      
