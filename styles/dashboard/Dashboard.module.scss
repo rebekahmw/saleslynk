@@ -24,14 +24,17 @@
     @include breakMax("smallTablet") {
         flex-direction: column;
         flex-wrap: nowrap;
+        align-items: center;
     }
 }
 
 .sideColumn {
     width: 25vw;
     background-color: colour("black");
+    @include breakMax("tablet") {
+        width: 100vw;
+    }
     @include breakMax("smallTablet") {
-        width: 80vw;
         height: 30vh;
     }
 }
@@ -49,11 +52,11 @@
 .right {
     @include breakMax("smallTablet") {
         height: 30vh;
+        width: 80vw;
         margin-top: 0;
     }
     @include breakMax("tablet") {
-        width: 100vw;
-        height: 40vw;
+        height: 30vh;
         margin-top: 2rem;
     }      
 }
@@ -66,10 +69,9 @@
         width: 50vw;
         height: 40vh;
     }
-}
 
-.mobile {
     @include breakMax("smallTablet") {
         width: 80vw;
+        margin-top: 0;
     }
 }
