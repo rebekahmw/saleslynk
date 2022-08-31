@@ -29,12 +29,12 @@ const SignIn = () => {
 
 	const router = useRouter();
 
-    useEffect(() => {
-        // redirect to dashboard if user is authenticated
-        if (link === true) {
-            router.push('/dashboard');
-        }
-    }, [link]);
+	useEffect(() => {
+		// redirect to dashboard if user is authenticated
+		if (link === true) {
+			router.push('/dashboard');
+		}
+	}, [link]);
 
 	const handleChange = (
 		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -52,7 +52,7 @@ const SignIn = () => {
 
 		const validation = SignInValidate(value);
 		// setErrors(validation.errors);
-		
+
 		if (validation.valid) {
 
 			const response = await fetch("/api/signin", {
@@ -67,24 +67,20 @@ const SignIn = () => {
 				const result = await response.json();
 				setError(result.message);
 			} else {
-				const result = await response.json();
 				setValue({ email: "", password: "" });
-			}
-
-			if (response.status === 200) {
 				router.push('/dashboard');
-			};
+			}
 		}
 	};
 
 	return (
-			<div className={style([form.container])}>
+		<div className={style([form.container])}>
 			<div className={style([form.form])}>
 				<h2 style={{ textAlign: "center" }}>Please sign in to your account</h2>
 				<div className={style([form.orangeBlock])}></div>
 				<form>
 					<div className={style([form.inputField, form.top])}>
-						<FontAwesomeIcon icon={faUser} />		
+						<FontAwesomeIcon icon={faUser} />
 						<TextInput
 							name="email"
 							type="email"
@@ -105,7 +101,7 @@ const SignIn = () => {
 							error={errors.emailError}
 						/>
 					</div>
-					
+
 					<div className={style([button.submit])}>
 						<a
 							className={style([
@@ -114,12 +110,12 @@ const SignIn = () => {
 							])}
 							onClick={handleSubmit}
 						>
-							Sign In 
+							Sign In
 						</a>
 					</div>
 					{error ? <FormError error={error} /> : null}
 				</form></div>
-			</div>
+		</div>
 	);
 };
 
