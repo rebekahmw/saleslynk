@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
 import form from "../../../styles/forms/Form.module.scss";
-import style from "../../../utils/styles";
+import style from "../../../../utils/styles";
 
 export type Props = {
 	name: string;

@@ -1,5 +1,5 @@
 import { ChangeEvent, MouseEvent, useEffect, useState } from "react";
-import TextInput from "./inputs/text";
+import TextInput from "./search/steps/text";
 import form from "../../styles/forms/Form.module.scss";
 import button from "../../styles/buttons/Button.module.scss";
 import style from "../../utils/styles";
