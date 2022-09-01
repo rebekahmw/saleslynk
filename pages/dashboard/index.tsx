@@ -6,7 +6,6 @@ import WeatherForecast from "../../modules/weather/weather";
 const Dashboard: NextPage = () => {
 	return (
 		<div className={style([dashboard.container])}>
-            <h1>Hello</h1>
 			<div className={style([dashboard.data])}>
 				<div className={style([dashboard.sideColumn, dashboard.left, dashboard.mobile])}>
 					left column

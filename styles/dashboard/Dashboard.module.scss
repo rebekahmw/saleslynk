@@ -4,12 +4,21 @@
 @import "../defaults.scss";
 
 .container {
-    // width: 100vw;
+    background: transparent url('../../components/dashboard/images/Asset\ 23.png') 100% 0% no-repeat padding-box;
+    background-color: #1F2029;
+    opacity: 1;
+    width: 100fr;
+    height: 100vh;
+    padding: 0 2rem;
+    padding-bottom: 40px;
+    color: white;
+    font-weight: lighter;
+    position: relative;
+}
 
-    // @include breakMax("tablet") {
-    //     height: 40vh
-    // }
-   
+.container::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
 .data {
@@ -30,7 +39,9 @@
 
 .sideColumn {
     width: 25vw;
-    background-color: colour("black");
+    background-color: #67717b8f;
+    border: 1px solid colour('white');
+    border-radius: 5%;
     @include breakMax("tablet") {
         width: 100vw;
     }
@@ -40,7 +51,7 @@
 }
 .left {
     @include breakMax("tablet") {
-        width: 38vw;
+        width: 36vw;
         height: 40vh;
     }
     @include breakMax("smallTablet") {
@@ -63,10 +74,12 @@
 
 .middleInfo {
     width: 40vw;
-    border: 2px solid colour("black");
+    border: 2px solid colour("darkOrange");
+    background: #ffb32c3d;
+    border-radius: 5%;
 
     @include breakMax("tablet") {
-        width: 50vw;
+        width: 46vw;
         height: 40vh;
     }
 
