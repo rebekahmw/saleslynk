@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import weather from "../../styles/dashboard/Weather.module.scss"
+import weather from "../../styles/dashboard/weather/Weather.module.scss"
 import style from "../../utils/styles";
 
 type ForecastItemProps = {
