@@ -4,7 +4,7 @@
 @import "../defaults.scss";
 
 .container {
-	background: colour("white");
+	background: transparent url('../../components/dashboard/images/Asset\ 23.png') 100% 0% no-repeat padding-box;
 	position: absolute;
 	z-index: 2;
 	width: 40vw;
@@ -101,4 +101,21 @@
 	display: block;
 	font-size: remSize(14);
 	font-weight: 500;
+}
+
+.searchBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15rem;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.heading {
+	color: colour("white")
 }

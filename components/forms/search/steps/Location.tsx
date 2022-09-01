@@ -1,13 +1,17 @@
-import type { NextPage } from "next";
-import { IFormData } from "../../../../pages/search/index";
+import { ChangeEvent } from "react";
+import { IFormLocation } from "../../../../pages/search/index";
+import searchStyle from "../../../../styles/forms/Form.module.scss"
+import style from "../../../../utils/styles";
 
-const Location: NextPage<IFormData> = (props) => {
-  return (
-    <div>
-      <h2>Finally, where is the client located?</h2>
+interface Props extends IFormLocation {
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
+}
+
+const Location = ({ country, handleChange }: Props) => (
+    <div className={style([searchStyle.section])}>
+      <h2 className={style([searchStyle.heading])}>Finally, where is the client located?</h2>
       {/* needs to be a select/dropdown */}
-      <input value={props.country} placeholder="Country *" type="text" name="country" id="country" required/>
+      <input onChange={handleChange} className={style([searchStyle.inputField])} value={country} placeholder="Country *" type="text" name="country" id="country" required/>
     </div>
   );
-}
 export default Location;

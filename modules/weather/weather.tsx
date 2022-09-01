@@ -75,12 +75,20 @@ const updateWeather = (
   if (refetch) refetch();
 };
 
+// pass location as prop
 const WeatherForecast: React.FC = () => {
   const [location, setLocation] = useState<Location>();
   const [currentWeekday, setWeekday] = useState(0);
   const { data, refetch } = useForecast(location);
 
   useEffect(() => updateWeather(setLocation), [setLocation]);
+
+  // useEffect(() => {
+  //   setLocation({
+  //     lat: coords.latitude,
+  //     lon: coords.longitude,
+  //   });
+  // }, [coords]);
 
   const forecast =
     data?.list?.map((forecast, i) => ({
