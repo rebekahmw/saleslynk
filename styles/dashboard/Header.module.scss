@@ -1,0 +1,127 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.headerLogo {
+    width: 100px;
+    height: auto;
+    ;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.image {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    clip-path: circle(40%);
+    cursor: pointer;
+}
+
+.expanded {
+    position: absolute;
+    width: 25vw;
+    right: 0px;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    z-index: 100;
+    background-color: #33343E;
+    border-radius: 8px;
+    overflow-anchor: disabled;
+}
+
+.accountCardContainer {
+    padding: 0 20px;
+    background-color: #33343E;
+    z-index: 10000;
+    border-radius: 8px;
+}
+
+.accountCardHeader {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #33343E;
+
+}
+
+.accountAvatarName {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #33343E;
+
+}
+
+.accountOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: #33343E;
+}
+
+.accountIcons {
+    height: 30px;
+    width: 30px;
+    background-color: #33343E;
+}
+
+.notifText {
+    color: #bcbcbc;
+}
+
+.notifBox {
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    z-index: 101;
+}
+
+.notifBox::-webkit-scrollbar {
+    display: none;
+}
+
+.notifContainer {
+    margin-top: -22px;
+    background-color: #33343E;
+}
+
+.notifContainer h4 {
+    margin-bottom: -4px;
+}
+
+.notifContainer hr {
+    border: 1px solid #54555f;
+    margin-bottom: 10px;
+}
+
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.439);
+    height: 500%;
+    width: 1000vw;
+    position: absolute;
+    left: -500%;
+    top: 0;
+    z-index: -10;
+}
+
+@media only screen and (max-width: 1300px) {
+    .expanded {
+        width: 80vw;
+    }
+}

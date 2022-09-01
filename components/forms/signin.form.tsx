@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/router';
+import Logo from "../icons/logoDark";
 
 export type SignInType = {
 	email: string;
@@ -68,13 +69,14 @@ const SignIn = () => {
 				setError(result.message);
 			} else {
 				setValue({ email: "", password: "" });
-				router.push('/dashboard');
+				router.push('/search');
 			}
 		}
 	};
 
 	return (
 		<div className={style([form.container])}>
+			<Logo />
 			<div className={style([form.form])}>
 				<h2 style={{ textAlign: "center" }}>Please sign in to your account</h2>
 				<div className={style([form.orangeBlock])}></div>
