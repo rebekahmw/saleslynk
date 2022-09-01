@@ -9,9 +9,12 @@ const Dashboard: NextPage = () => {
             <h1>Hello</h1>
 			<div className={style([dashboard.data])}>
 				<div className={style([dashboard.sideColumn, dashboard.left, dashboard.mobile])}>
+					left column
+				</div>
+				<div className={style([dashboard.middleInfo, dashboard.mobile])}>
+					middle stuff
 					<WeatherForecast/>
 				</div>
-				<div className={style([dashboard.middleInfo, dashboard.mobile])}>middle stuff</div>
 				<div className={style([dashboard.sideColumn, dashboard.right])}>column</div>
 			</div>
 		</div>
