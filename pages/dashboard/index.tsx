@@ -3,6 +3,7 @@ import style from "../../utils/styles";
 import dashboard from "../../styles/dashboard/Dashboard.module.scss";
 import WeatherForecast from "../../modules/weather/weather";
 import Logo from "../../components/icons/logoLight";
+import Address from "../../components/dashboard/images/UKCompanyData/Address";
 
 const Dashboard: NextPage = () => {
 	return (
@@ -18,7 +19,10 @@ const Dashboard: NextPage = () => {
 					middle stuff
 					<WeatherForecast/>
 				</div>
-				<div className={style([dashboard.sideColumn, dashboard.right])}>column</div>
+				<div className={style([dashboard.sideColumn, dashboard.right])}>
+					Company Stuff
+					<Address />
+				</div>
 			</div>
 		</div>
 	);

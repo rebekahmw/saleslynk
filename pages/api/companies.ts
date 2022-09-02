@@ -5,7 +5,7 @@ export type CompanyResponse = {
 
 };
 
-const baseUrl = 'https://api.company-information.service.gov.uk/company/';
+const baseUrl = 'https://api.companieshouse.gov.uk/';
 const apiKey = process.env.COMPANIES_HOUSE_API_KEY || '';
 
 const getApiUrl = (endpoint: string, companyNumber: number) => {
