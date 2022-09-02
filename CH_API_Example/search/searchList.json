@@ -1,0 +1,109 @@
+{
+    "endpoint": "https://api.companieshouse.gov.uk/search/companies?q=boxmodel&items_per_page=10",
+    "items_per_page": 10,
+    "start_index": 0,
+    "total_results": 3,
+    "kind": "search#companies",
+    "items": [
+        {
+            "address": {
+                "postal_code": "IP14 5UA",
+                "locality": "Stowmarket",
+                "address_line_1": "Dunnock Close",
+                "premises": "4 ",
+                "address_line_2": "Dunnock Close"
+            },
+            "date_of_cessation": "2015-09-01",
+            "matches": {
+                "snippet": [],
+                "title": [
+                    1,
+                    8
+                ]
+            },
+            "description_identifier": [
+                "dissolved-on"
+            ],
+            "links": {
+                "self": "/company/08520621"
+            },
+            "date_of_creation": "2013-05-08",
+            "address_snippet": "4  Dunnock Close, Dunnock Close, Stowmarket, IP14 5UA",
+            "kind": "searchresults#company",
+            "snippet": "",
+            "description": "08520621 - Dissolved on  1 September 2015",
+            "company_type": "ltd",
+            "company_status": "dissolved",
+            "title": "BOXMODEL LTD",
+            "company_number": "08520621"
+        },
+        {
+            "address": {
+                "country": "England",
+                "premises": "Clavering House Business Centre Newcastle",
+                "address_line_1": "Clavering Place",
+                "locality": "Newcastle Upon Tyne",
+                "region": "Tyne And Wear",
+                "postal_code": "NE1 3NG"
+            },
+            "matches": {
+                "title": [
+                    1,
+                    8
+                ],
+                "snippet": [
+                    1,
+                    8
+                ]
+            },
+            "description_identifier": [
+                "incorporated-on"
+            ],
+            "links": {
+                "self": "/company/06929210"
+            },
+            "date_of_creation": "2009-06-10",
+            "address_snippet": "Clavering House Business Centre Newcastle, Clavering Place, Newcastle Upon Tyne, Tyne And Wear, England, NE1 3NG",
+            "kind": "searchresults#company",
+            "snippet": "BOXMODEL ",
+            "description": "06929210 - Incorporated on 10 June 2009",
+            "company_type": "ltd",
+            "company_status": "active",
+            "company_number": "06929210",
+            "title": "BOXMODEL DIGITAL MEDIA LIMITED"
+        },
+        {
+            "address_snippet": "Clavering House Business Centre, Clavering Place, Newcastle Upon Tyne, Tyne And Wear, England, NE1 3NG",
+            "date_of_creation": "2017-10-10",
+            "links": {
+                "self": "/company/11005000"
+            },
+            "description_identifier": [
+                "incorporated-on"
+            ],
+            "matches": {
+                "snippet": [],
+                "title": [
+                    1,
+                    8
+                ]
+            },
+            "address": {
+                "postal_code": "NE1 3NG",
+                "region": "Tyne And Wear",
+                "country": "England",
+                "locality": "Newcastle Upon Tyne",
+                "address_line_1": "Clavering Place",
+                "premises": "Clavering House Business Centre"
+            },
+            "title": "BOXMODEL HOLDING COMPANY LIMITED",
+            "company_number": "11005000",
+            "company_status": "active",
+            "company_type": "ltd",
+            "description": "11005000 - Incorporated on 10 October 2017",
+            "snippet": "",
+            "kind": "searchresults#company"
+        }
+    ],
+    "page_number": 1
+}

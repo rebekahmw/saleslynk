@@ -1,0 +1,14 @@
+{
+    "endpoint": "https://api.companieshouse.gov.uk/company/06929210/registered-office-address",
+    "etag": "7a07d14b7e2e4f1612f3a4212d0265fa70d1b52f",
+    "kind": "registered-office-address",
+    "links": {
+        "self": "/company/06929210/registered-office-address"
+    },
+    "address_line_1": "Clavering House Business Centre Newcastle",
+    "address_line_2": "Clavering Place",
+    "country": "England",
+    "locality": "Newcastle Upon Tyne",
+    "region": "Tyne And Wear",
+    "postal_code": "NE1 3NG"
+}

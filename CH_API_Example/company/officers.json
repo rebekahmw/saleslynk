@@ -1,0 +1,220 @@
+{
+    "emdpoint": "https://api.companieshouse.gov.uk/company/06929210/officers",
+    "inactive_count": 0,
+    "start_index": 0,
+    "links": {
+        "self": "/company/06929210/officers"
+    },
+    "items": [
+        {
+            "name": "EASTON, Alan Michael",
+            "address": {
+                "postal_code": "NE1 3NG",
+                "country": "England",
+                "region": "Tyne And Wear",
+                "premises": "Clavering House Business Centre Newcastle",
+                "address_line_1": "Clavering Place",
+                "locality": "Newcastle Upon Tyne"
+            },
+            "nationality": "South African",
+            "appointed_on": "2010-04-01",
+            "country_of_residence": "England",
+            "date_of_birth": {
+                "month": 2,
+                "year": 1974
+            },
+            "occupation": "Director",
+            "officer_role": "director",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/lbPvgJq55V9bBzdal_lTQc5iCxQ/appointments"
+                },
+                "self": "/company/06929210/appointments/3McPRcRnGqbNafMZYWeYfXM4Hic"
+            }
+        },
+        {
+            "nationality": "British",
+            "address": {
+                "locality": "East Cramlington",
+                "premises": "28",
+                "address_line_1": "Beech Avenue",
+                "postal_code": "NE23 6XS",
+                "region": "Northumberland"
+            },
+            "name": "CALVERT, David",
+            "resigned_on": "2013-03-11",
+            "appointed_on": "2009-07-20",
+            "occupation": "Owner",
+            "links": {
+                "self": "/company/06929210/appointments/0qpcGl-OSV5x73gFPGGQfFqnO7I",
+                "officer": {
+                    "appointments": "/officers/bi58Ix6btMYeE6iFWToskoHoJqc/appointments"
+                }
+            },
+            "officer_role": "secretary"
+        },
+        {
+            "name": "CALVERT, David",
+            "nationality": "British",
+            "address": {
+                "locality": "East Cramlington",
+                "address_line_1": "Beech Avenue",
+                "premises": "28",
+                "postal_code": "NE23 6XS",
+                "region": "Northumberland"
+            },
+            "resigned_on": "2013-03-11",
+            "appointed_on": "2009-07-20",
+            "country_of_residence": "United Kingdom",
+            "date_of_birth": {
+                "year": 1977,
+                "month": 1
+            },
+            "occupation": "Owner",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/bi58Ix6btMYeE6iFWToskoHoJqc/appointments"
+                },
+                "self": "/company/06929210/appointments/eQobKoFAqSCcDsTqcwPg9GolZnU"
+            },
+            "officer_role": "director"
+        },
+        {
+            "date_of_birth": {
+                "month": 8,
+                "year": 1980
+            },
+            "occupation": "Director",
+            "officer_role": "director",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/kC5DsaaldRF8cXSAgIamZJqjMag/appointments"
+                },
+                "self": "/company/06929210/appointments/q7TSnQFVdLnyXuRm7-q0evhaP9s"
+            },
+            "country_of_residence": "United Kingdom",
+            "resigned_on": "2017-02-21",
+            "address": {
+                "locality": "Newcastle Upon Tyne",
+                "country": "United Kingdom",
+                "address_line_1": "Horsley",
+                "premises": "Croft Cottage",
+                "postal_code": "NE15 0NS"
+            },
+            "name": "GENT, Mark Richard",
+            "nationality": "British",
+            "appointed_on": "2012-01-02"
+        },
+        {
+            "links": {
+                "self": "/company/06929210/appointments/jwZlQ8i_V3N_b_UIaeR7PaOQVOU",
+                "officer": {
+                    "appointments": "/officers/-rHHJuLeZYYOCwXWWY_7Ibm5fGk/appointments"
+                }
+            },
+            "officer_role": "director",
+            "occupation": "Consultant",
+            "date_of_birth": {
+                "year": 1977,
+                "month": 12
+            },
+            "country_of_residence": "United Kingdom",
+            "appointed_on": "2013-02-01",
+            "nationality": "British",
+            "name": "GOLIGHTLY, Ross John",
+            "address": {
+                "country": "United Kingdom",
+                "postal_code": "NE1 2DF",
+                "premises": "Toffee Factory Lower Steenbergs Yard",
+                "region": "Newcastle Upon Tyne",
+                "locality": "Ouseburn",
+                "address_line_1": "Quayside"
+            },
+            "resigned_on": "2015-10-15"
+        },
+        {
+            "country_of_residence": "England",
+            "links": {
+                "self": "/company/06929210/appointments/sto4j4b5asdm2PUqTswgo7YKPro",
+                "officer": {
+                    "appointments": "/officers/1m59jaEtKCjTSDHqthn94EpPhVo/appointments"
+                }
+            },
+            "officer_role": "director",
+            "date_of_birth": {
+                "month": 6,
+                "year": 1978
+            },
+            "occupation": "Director",
+            "appointed_on": "2012-09-07",
+            "name": "HUTTON, Jonathan Paul",
+            "address": {
+                "country": "United Kingdom",
+                "premises": "4",
+                "address_line_1": "Dunnock Close",
+                "region": "Suffolk",
+                "locality": "Stowmarket",
+                "postal_code": "IP14 5UA"
+            },
+            "nationality": "British",
+            "resigned_on": "2017-07-19"
+        },
+        {
+            "appointed_on": "2009-06-10",
+            "name": "JACOBS, Yomtov Eliezer",
+            "address": {
+                "premises": "69",
+                "postal_code": "M25 0LW",
+                "locality": "Prestwich",
+                "address_line_1": "Richmond Avenue"
+            },
+            "nationality": "British",
+            "resigned_on": "2009-06-10",
+            "country_of_residence": "England",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/x1HTdW_OiQjvE0qXT952mhMH5p0/appointments"
+                },
+                "self": "/company/06929210/appointments/uimCVeLtKgNcRtCLEuTae1S9A6U"
+            },
+            "officer_role": "director",
+            "date_of_birth": {
+                "month": 10,
+                "year": 1970
+            },
+            "occupation": "Company Formation Agent"
+        },
+        {
+            "date_of_birth": {
+                "month": 7,
+                "year": 1974
+            },
+            "occupation": "Company Director",
+            "links": {
+                "officer": {
+                    "appointments": "/officers/nBTLsluKyxtyJLGMe8x34tTaf5U/appointments"
+                },
+                "self": "/company/06929210/appointments/LDq8YFOAuhcV8a3dqI3TALVc6ds"
+            },
+            "officer_role": "director",
+            "country_of_residence": "England",
+            "address": {
+                "region": "Newcastle Upon Tyne",
+                "locality": "Ouseburn",
+                "postal_code": "NE1 2DF",
+                "address_line_1": "Quayside",
+                "premises": "Toffee Factory Lower Steenbergs Yard"
+            },
+            "name": "OLANIPEKUN, Tony James Christopher",
+            "nationality": "British",
+            "resigned_on": "2015-09-01",
+            "appointed_on": "2015-01-05"
+        }
+    ],
+    "active_count": 1,
+    "items_per_page": 35,
+    "total_results": 8,
+    "kind": "officer-list",
+    "etag": "58a0dcaff51677a71f81d4364c3cee2098f897a3",
+    "resigned_count": 7
+}

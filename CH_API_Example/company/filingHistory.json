@@ -1,0 +1,466 @@
+{
+    "endpoint": "https://api.companieshouse.gov.uk/company/06929210/filing-history",
+    "total_count": 65,
+    "filing_history_status": "filing-history-available",
+    "items_per_page": 25,
+    "items": [
+        {
+            "action_date": "2022-07-31",
+            "category": "confirmation-statement",
+            "date": "2022-08-31",
+            "description": "confirmation-statement-with-updates",
+            "description_values": {
+                "made_up_date": "2022-07-31"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzM1MDI3NTcxMGFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/4mQyTLvZ4Rkv7mi_Mb6RVRFj9gd-LB8CTzIO6AqI2FI"
+            },
+            "type": "CS01",
+            "pages": 5,
+            "barcode": "XBBK3GEP",
+            "transaction_id": "MzM1MDI3NTcxMGFkaXF6a2N4"
+        },
+        {
+            "action_date": "2021-03-31",
+            "category": "accounts",
+            "date": "2022-01-17",
+            "description": "accounts-with-accounts-type-total-exemption-full",
+            "description_values": {
+                "made_up_date": "2021-03-31"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzMyNjg2MDE4NmFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/4-PxOTV77LcR9N-oxiNKcBIMkvdg7uae0Yz4v_JkA_g"
+            },
+            "type": "AA",
+            "pages": 9,
+            "barcode": "XAVWQB3K",
+            "transaction_id": "MzMyNjg2MDE4NmFkaXF6a2N4"
+        },
+        {
+            "action_date": "2021-07-31",
+            "category": "confirmation-statement",
+            "date": "2021-08-17",
+            "description": "confirmation-statement-with-updates",
+            "description_values": {
+                "made_up_date": "2021-07-31"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzMxMDg3NzE3NWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/j31vBQoO5tCOH-nvzd3wgDrOwAkfpACie9O-TuJOT18"
+            },
+            "type": "CS01",
+            "pages": 5,
+            "barcode": "XAB2NFWP",
+            "transaction_id": "MzMxMDg3NzE3NWFkaXF6a2N4"
+        },
+        {
+            "action_date": "2020-09-22",
+            "category": "address",
+            "date": "2020-09-22",
+            "description": "change-registered-office-address-company-with-date-old-address-new-address",
+            "description_values": {
+                "change_date": "2020-09-22",
+                "new_address": "Clavering House Business Centre Newcastle Clavering Place Newcastle upon Tyne Tyne and Wear NE1 3NG",
+                "old_address": "Gateshead International Business Centre Mulgrave Terrace Gateshead NE8 1AN England"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzI3ODE5ODEwOWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/0bYLqKCywETZ3loYEyqXI96L09PvrIpw7uf9GkDtxok"
+            },
+            "type": "AD01",
+            "pages": 1,
+            "barcode": "X9E0WIH4",
+            "transaction_id": "MzI3ODE5ODEwOWFkaXF6a2N4"
+        },
+        {
+            "action_date": "2020-07-31",
+            "category": "confirmation-statement",
+            "date": "2020-08-17",
+            "description": "confirmation-statement-with-updates",
+            "description_values": {
+                "made_up_date": "2020-07-31"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzI3NTQzMzU1NWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/goA0aZhHnLzRZywHcP7MEvd9kpwq_y47jRDKRMmClqE"
+            },
+            "type": "CS01",
+            "pages": 5,
+            "barcode": "X9BLN1NV",
+            "transaction_id": "MzI3NTQzMzU1NWFkaXF6a2N4"
+        },
+        {
+            "action_date": "2020-03-31",
+            "category": "accounts",
+            "date": "2020-06-12",
+            "description": "accounts-with-accounts-type-total-exemption-full",
+            "description_values": {
+                "made_up_date": "2020-03-31"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzI2NzE5NDIzM2FkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/IFInB7PXcvT8j5n-2fWDuSFbccsDDpQrz0GRsGpv2GU"
+            },
+            "type": "AA",
+            "pages": 12,
+            "barcode": "X971H6LU",
+            "transaction_id": "MzI2NzE5NDIzM2FkaXF6a2N4"
+        },
+        {
+            "date": "2019-08-12",
+            "description_values": {
+                "made_up_date": "2019-07-31"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzI0MTUxNjA2NGFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/Z5j3iGSmgTnsDG_woFe73lAoLxU8gY2SUWRwbxlFyuI"
+            },
+            "action_date": "2019-07-31",
+            "description": "confirmation-statement-with-updates",
+            "type": "CS01",
+            "category": "confirmation-statement",
+            "pages": 5,
+            "barcode": "X8BPDD5N",
+            "transaction_id": "MzI0MTUxNjA2NGFkaXF6a2N4"
+        },
+        {
+            "category": "accounts",
+            "type": "AA",
+            "description": "accounts-with-accounts-type-total-exemption-full",
+            "action_date": "2019-03-31",
+            "description_values": {
+                "made_up_date": "2019-03-31"
+            },
+            "links": {
+                "self": "/company/06929210/filing-history/MzIzODMzNTUyOWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/N1RZ79Dw5yXYDqYMc2IaFHHfwJBfYM-ng-vghyuGTag"
+            },
+            "date": "2019-07-02",
+            "pages": 12,
+            "barcode": "X88UD0WH",
+            "transaction_id": "MzIzODMzNTUyOWFkaXF6a2N4"
+        },
+        {
+            "type": "MR04",
+            "links": {
+                "self": "/company/06929210/filing-history/MzIzNzU2NzI5M2FkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/YUw8OcniVP-4eKa86ut60LzkUgQ-WjVsAaij1-mNFv0"
+            },
+            "description_values": {
+                "charge_number": "069292100002"
+            },
+            "description": "mortgage-satisfy-charge-full",
+            "category": "mortgage",
+            "date": "2019-06-22",
+            "subcategory": "satisfy",
+            "pages": 1,
+            "barcode": "X886DSPM",
+            "transaction_id": "MzIzNzU2NzI5M2FkaXF6a2N4"
+        },
+        {
+            "category": "accounts",
+            "type": "AA",
+            "date": "2018-11-19",
+            "description": "accounts-with-accounts-type-total-exemption-full",
+            "action_date": "2018-03-31",
+            "links": {
+                "self": "/company/06929210/filing-history/MzIxOTY4MTk0NmFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/Ki5UbCaQSi6pByudYo-nEzCDbviZp63iM8YAc1iTASg"
+            },
+            "description_values": {
+                "made_up_date": "2018-03-31"
+            },
+            "pages": 12,
+            "barcode": "X7J142C2",
+            "transaction_id": "MzIxOTY4MTk0NmFkaXF6a2N4"
+        },
+        {
+            "date": "2018-08-02",
+            "category": "confirmation-statement",
+            "description_values": {
+                "made_up_date": "2018-07-31"
+            },
+            "description": "confirmation-statement-with-updates",
+            "type": "CS01",
+            "links": {
+                "self": "/company/06929210/filing-history/MzIxMTIzNzk5MmFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/23QQSK0WmRMDPwb6FgW9fS2pAi4Ro135CJO6X17K9qo"
+            },
+            "action_date": "2018-07-31",
+            "pages": 5,
+            "barcode": "X7BGBYOR",
+            "transaction_id": "MzIxMTIzNzk5MmFkaXF6a2N4"
+        },
+        {
+            "date": "2018-03-16",
+            "category": "persons-with-significant-control",
+            "description": "withdrawal-of-a-person-with-significant-control-statement",
+            "type": "PSC09",
+            "description_values": {
+                "withdrawal_date": "2018-03-16"
+            },
+            "subcategory": "statements",
+            "action_date": "2018-03-16",
+            "links": {
+                "self": "/company/06929210/filing-history/MzIwMDIwNzE4MmFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/XJ3Pce3RD6Ez8JDpYrqAwIq0xOrE3fjcztG3hhqhFJ0"
+            },
+            "pages": 2,
+            "barcode": "X71UHDGO",
+            "transaction_id": "MzIwMDIwNzE4MmFkaXF6a2N4"
+        },
+        {
+            "links": {
+                "self": "/company/06929210/filing-history/MzE5MjIxOTA4NWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/n1rwPp0-qEmSPLoaJq03m2IYB0wvVeKuPHjf5vIgY8Q"
+            },
+            "type": "AA",
+            "category": "accounts",
+            "description_values": {
+                "made_up_date": "2017-03-31"
+            },
+            "description": "accounts-with-accounts-type-total-exemption-full",
+            "action_date": "2017-03-31",
+            "date": "2017-12-07",
+            "pages": 12,
+            "barcode": "X6KR7ZKO",
+            "transaction_id": "MzE5MjIxOTA4NWFkaXF6a2N4"
+        },
+        {
+            "action_date": "2017-11-24",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE5MTE4NTY1MmFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/xpT8FGWJ6vEKkEezdbG31YoI8Og6vc8DEhBpdnr7CqM"
+            },
+            "subcategory": "create",
+            "type": "MR01",
+            "description_values": {
+                "charge_number": "069292100002",
+                "charge_creation_date": "2017-11-24"
+            },
+            "date": "2017-11-27",
+            "description": "mortgage-create-with-deed-with-charge-number-charge-creation-date",
+            "category": "mortgage",
+            "pages": 17,
+            "barcode": "X6K47FEI",
+            "transaction_id": "MzE5MTE4NTY1MmFkaXF6a2N4"
+        },
+        {
+            "description": "change-registered-office-address-company-with-date-old-address-new-address",
+            "description_values": {
+                "new_address": "Gateshead International Business Centre Mulgrave Terrace Gateshead NE8 1AN",
+                "old_address": "The Old Pub East Quayside Albion Row Newcastle upon Tyne Tyne and Wear NE6 1LR England",
+                "change_date": "2017-10-17"
+            },
+            "category": "address",
+            "action_date": "2017-10-17",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE4Nzg2NTM5NmFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/vePPnl8J9I5jJ75foe6vGvc0Ub9ABCaY4pQQrSO0i-U"
+            },
+            "date": "2017-10-17",
+            "type": "AD01",
+            "pages": 1,
+            "barcode": "X6H7EQH6",
+            "transaction_id": "MzE4Nzg2NTM5NmFkaXF6a2N4"
+        },
+        {
+            "description_values": {
+                "made_up_date": "2017-07-31"
+            },
+            "type": "CS01",
+            "action_date": "2017-07-31",
+            "date": "2017-09-18",
+            "category": "confirmation-statement",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE4NTU3MDc1NGFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/MKUAhgM4toj9DNpGS1xz8EsKQMFHtN49SWta9jPEdZ4"
+            },
+            "description": "confirmation-statement-with-updates",
+            "pages": 5,
+            "barcode": "X6F93TEX",
+            "transaction_id": "MzE4NTU3MDc1NGFkaXF6a2N4"
+        },
+        {
+            "action_date": "2016-07-26",
+            "type": "PSC01",
+            "description_values": {
+                "notification_date": "2016-07-26",
+                "psc_name": "Alan Michael Easton"
+            },
+            "subcategory": "notifications",
+            "date": "2017-09-18",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE4NTU2NzE4OGFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/TDbDfV11Obbkxs0O-KhXn6wiHvjR-ee66YPSfEVKjOA"
+            },
+            "description": "notification-of-a-person-with-significant-control",
+            "category": "persons-with-significant-control",
+            "pages": 2,
+            "barcode": "X6F905ZT",
+            "transaction_id": "MzE4NTU2NzE4OGFkaXF6a2N4"
+        },
+        {
+            "category": "capital",
+            "description": "capital-return-purchase-own-shares",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE4NTU1NjAzMGFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/VrbKv_qEqz5UufLCql5_f2BmbWKfSmYP_NeTvoMDOwY"
+            },
+            "date": "2017-09-18",
+            "type": "SH03",
+            "paper_filed": true,
+            "pages": 3,
+            "barcode": "A6EDGJK9",
+            "transaction_id": "MzE4NTU1NjAzMGFkaXF6a2N4"
+        },
+        {
+            "description_values": {
+                "officer_name": "Jonathan Paul Hutton",
+                "termination_date": "2017-07-19"
+            },
+            "description": "termination-director-company-with-name-termination-date",
+            "action_date": "2017-07-19",
+            "subcategory": "termination",
+            "date": "2017-07-19",
+            "category": "officers",
+            "type": "TM01",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE4MDkwODA0NWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/cZCB5N_vLdNu7gMksq5r5WFo0ddMB-lcv2KNiN0rDp4"
+            },
+            "pages": 1,
+            "barcode": "X6B0BVBD",
+            "transaction_id": "MzE4MDkwODA0NWFkaXF6a2N4"
+        },
+        {
+            "action_date": "2017-02-21",
+            "subcategory": "termination",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE3NTU1Mjc0N2FkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/jNH-C2ThOpGgQKVVTVq0B4EchiDszpyK5zOpj-mzHgw"
+            },
+            "description_values": {
+                "termination_date": "2017-02-21",
+                "officer_name": "Mark Richard Gent"
+            },
+            "category": "officers",
+            "description": "termination-director-company-with-name-termination-date",
+            "type": "TM01",
+            "paper_filed": true,
+            "date": "2017-05-11",
+            "pages": 2,
+            "barcode": "A65WFF3C",
+            "transaction_id": "MzE3NTU1Mjc0N2FkaXF6a2N4"
+        },
+        {
+            "description_values": {
+                "made_up_date": "2016-03-31"
+            },
+            "type": "AA",
+            "action_date": "2016-03-31",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE2NDg4NDc1MWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/ghZAWw8iZJ_B6C1zToO2owv5Z7JcjRXFUKN9OwkL6GA"
+            },
+            "description": "accounts-with-accounts-type-total-exemption-small",
+            "date": "2016-12-20",
+            "category": "accounts",
+            "pages": 6,
+            "barcode": "X5M82BDS",
+            "transaction_id": "MzE2NDg4NDc1MWFkaXF6a2N4"
+        },
+        {
+            "links": {
+                "self": "/company/06929210/filing-history/MzE2MzM5MzkzN2FkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/tdO-VHHP5UfREwo-dB4B-RDieCaSjKlrza3sTWZ5aSo"
+            },
+            "date": "2016-12-02",
+            "type": "AD01",
+            "description_values": {
+                "old_address": "Toffee Factory Lower Steenbergs Yard Quayside Ouseburn Newcastle upon Tyne NE1 2DF",
+                "new_address": "The Old Pub East Quayside Albion Row Newcastle upon Tyne Tyne and Wear NE6 1LR",
+                "change_date": "2016-12-02"
+            },
+            "action_date": "2016-12-02",
+            "description": "change-registered-office-address-company-with-date-old-address-new-address",
+            "category": "address",
+            "pages": 1,
+            "barcode": "X5KZ8512",
+            "transaction_id": "MzE2MzM5MzkzN2FkaXF6a2N4"
+        },
+        {
+            "description": "confirmation-statement-with-updates",
+            "description_values": {
+                "made_up_date": "2016-07-25"
+            },
+            "date": "2016-07-25",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE1MzU5MTEwMWFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/5kdQRThVxXf1S9eGfVAq6s27ATfGm4VfhOWes_mJ0C4"
+            },
+            "action_date": "2016-07-25",
+            "category": "confirmation-statement",
+            "type": "CS01",
+            "pages": 4,
+            "barcode": "X5BY8X5S",
+            "transaction_id": "MzE1MzU5MTEwMWFkaXF6a2N4"
+        },
+        {
+            "category": "annual-return",
+            "description": "annual-return-company-with-made-up-date-full-list-shareholders",
+            "links": {
+                "self": "/company/06929210/filing-history/MzE1MzM4NzI3MmFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/OZpMABDDEbqdNg_UFeiwP2OyUOmTURjROWRHaj5naDY"
+            },
+            "description_values": {
+                "made_up_date": "2016-06-10"
+            },
+            "type": "AR01",
+            "date": "2016-07-21",
+            "action_date": "2016-06-10",
+            "associated_filings": [
+                {
+                    "action_date": 1469059200000,
+                    "category": "capital",
+                    "date": "2016-07-21",
+                    "description": "statement-of-capital",
+                    "description_values": {
+                        "capital": [
+                            {
+                                "currency": "GBP",
+                                "figure": "258"
+                            }
+                        ],
+                        "date": "2016-07-21"
+                    },
+                    "type": "SH01"
+                }
+            ],
+            "pages": 6,
+            "barcode": "X5BNWGVS",
+            "transaction_id": "MzE1MzM4NzI3MmFkaXF6a2N4"
+        },
+        {
+            "type": "AA",
+            "date": "2015-12-31",
+            "links": {
+                "self": "/company/06929210/filing-history/MzEzODA4NjQ4MGFkaXF6a2N4",
+                "document_metadata": "https://frontend-doc-api.company-information.service.gov.uk/document/e3FXZrqB3fBBQ_5BrMykoTmRGAXQPGgOookERGer96c"
+            },
+            "category": "accounts",
+            "action_date": "2015-03-31",
+            "paper_filed": true,
+            "description": "accounts-with-accounts-type-total-exemption-small",
+            "description_values": {
+                "made_up_date": "2015-03-31"
+            },
+            "pages": 5,
+            "barcode": "A4MISUG9",
+            "transaction_id": "MzEzODA4NjQ4MGFkaXF6a2N4"
+        }
+    ],
+    "start_index": 0
+}

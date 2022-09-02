@@ -1,0 +1,68 @@
+{
+    "endpoint": "https://api.companieshouse.gov.uk/company/06929210",
+    "accounts": {
+        "next_accounts": {
+            "due_on": "2022-12-31",
+            "period_start_on": "2021-04-01",
+            "overdue": false,
+            "period_end_on": "2022-03-31"
+        },
+        "last_accounts": {
+            "period_start_on": "2020-04-01",
+            "made_up_to": "2021-03-31",
+            "period_end_on": "2021-03-31",
+            "type": "total-exemption-full"
+        },
+        "next_due": "2022-12-31",
+        "next_made_up_to": "2022-03-31",
+        "overdue": false,
+        "accounting_reference_date": {
+            "day": "31",
+            "month": "03"
+        }
+    },
+    "company_name": "BOXMODEL DIGITAL MEDIA LIMITED",
+    "company_number": "06929210",
+    "company_status": "active",
+    "confirmation_statement": {
+        "next_due": "2023-08-14",
+        "last_made_up_to": "2022-07-31",
+        "overdue": false,
+        "next_made_up_to": "2023-07-31"
+    },
+    "date_of_creation": "2009-06-10",
+    "etag": "7a07d14b7e2e4f1612f3a4212d0265fa70d1b52f",
+    "has_charges": true,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "jurisdiction": "england-wales",
+    "last_full_members_list_date": "2016-06-10",
+    "links": {
+        "self": "/company/06929210",
+        "persons_with_significant_control": "/company/06929210/persons-with-significant-control",
+        "officers": "/company/06929210/officers",
+        "filing_history": "/company/06929210/filing-history"
+    },
+    "previous_company_names": [
+        {
+            "name": "BOXMODEL LTD",
+            "effective_from": "2009-06-10",
+            "ceased_on": "2010-03-25"
+        }
+    ],
+    "registered_office_address": {
+        "address_line_2": "Clavering Place",
+        "country": "England",
+        "postal_code": "NE1 3NG",
+        "region": "Tyne And Wear",
+        "locality": "Newcastle Upon Tyne",
+        "address_line_1": "Clavering House Business Centre Newcastle"
+    },
+    "registered_office_is_in_dispute": false,
+    "sic_codes": [
+        "58290"
+    ],
+    "type": "ltd",
+    "undeliverable_registered_office_address": false,
+    "can_file": true
+}

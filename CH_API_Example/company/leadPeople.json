@@ -1,0 +1,44 @@
+{
+    "endpoint": "https://api.companieshouse.gov.uk/company/06929210/persons-with-significant-control",
+    "ceased_count": 0,
+    "items_per_page": 25,
+    "total_results": 1,
+    "links": {
+        "persons_with_significant_control_statements": "/company/06929210/persons-with-significant-control-statements",
+        "self": "/company/06929210/persons-with-significant-control"
+    },
+    "start_index": 0,
+    "items": [
+        {
+            "name": "Alan Michael Easton",
+            "country_of_residence": "United Kingdom",
+            "nationality": "British",
+            "address": {
+                "country": "United Kingdom",
+                "region": "Newcastle Upon Tyne",
+                "postal_code": "NE1 2DF",
+                "locality": "Ouseburn",
+                "premises": "Toffee Factory Lower Steenbergs Yard Quayside"
+            },
+            "notified_on": "2016-07-26",
+            "date_of_birth": {
+                "month": 2,
+                "year": 1974
+            },
+            "links": {
+                "self": "/company/06929210/persons-with-significant-control/individual/pIr-Mqv34qj8Dj8fjO16E39MZyo"
+            },
+            "name_elements": {
+                "forename": "Alan",
+                "surname": "Easton",
+                "middle_name": "Michael"
+            },
+            "etag": "389016bfbab7792b061abecc7725e35af809b20c",
+            "natures_of_control": [
+                "significant-influence-or-control"
+            ],
+            "kind": "individual-person-with-significant-control"
+        }
+    ],
+    "active_count": 1
+}
