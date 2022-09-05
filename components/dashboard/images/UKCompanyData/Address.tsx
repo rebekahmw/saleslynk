@@ -39,7 +39,7 @@ const Address = () => {
 			const { data: response } = await axios
                 .get(('https://api.companieshouse.gov.uk/company/06929210'), {
                     headers: {
-                        'Authorization': `Basic N2ExYjdiOTYtZGQzMC00M2EzLWIzMDgtZDYwNTc5Y2Q3NzVl`
+                        'Authorization': `Basic ${process.env.CH_BASE64_API_KEY}`
                     }
                 })
 			setAddress(response);
